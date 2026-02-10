@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BnB Home - Discover Your Stay</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec6d13",
+                        "background-light": "#fcfaf8", // Custom cream background
+                        "background-dark": "#221810",
+                        "wood-brown": "#3e2723",
+                        "soft-gold": "#d4af37",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-tab {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-wood-brown dark:text-gray-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">home_app_logo</span>
+<h1 class="text-xl font-extrabold tracking-tight text-wood-brown dark:text-white">BnB Home</h1>
+</div>
+<button class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700">
+<span class="material-symbols-outlined text-wood-brown dark:text-white">person</span>
+</button>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="relative px-4 pt-4">
+<div class="relative h-[440px] w-full overflow-hidden rounded-xl bg-cover bg-center flex flex-col items-center justify-center p-6 text-center" data-alt="Cozy wooden cottage in a lush green forest clearing" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzKueQns6vpelFwzCB7S7W4O5KALg_oqPWVnM6pkQ3s1-Gjy1klSToNQr73Fiv5ODGkJBLSEA6OfDFCWZ_dnp6pXGJYmD6YQz5vj5ZiMPu3zeNC2XHbwTqwtoFUYQVXvI_Bx6t_whERYTN880recTr58wnAsZei26g1SYBwMz9FyYNMU8bA6B_EZ8wwC97xDkje1gxY5-s0OfT0WscGcTCv6hSfObXzli5jCv0zh9fMUFpEinXZ6mRX1h7vdNM4FBXg2zAl5z-V7HM');">
+<h2 class="text-white text-4xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                    Find your next unique getaway
+                </h2>
+<p class="text-white/90 text-lg mb-8 font-medium">
+                    Curated stays for the modern traveler.
+                </p>
+<!-- Search Container -->
+<div class="w-full max-w-md bg-white dark:bg-gray-900 rounded-xl shadow-2xl p-2 flex flex-col gap-2">
+<div class="flex items-center gap-3 px-4 py-3 border-b border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<input class="w-full border-none focus:ring-0 bg-transparent text-sm font-semibold text-wood-brown dark:text-white placeholder:text-gray-400" placeholder="Where to?" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-3 px-4 py-3 bg-background-light dark:bg-gray-800 rounded-lg">
+<span class="material-symbols-outlined text-gray-400 text-xl">calendar_today</span>
+<span class="text-xs font-bold text-wood-brown dark:text-gray-300">Dates</span>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 bg-background-light dark:bg-gray-800 rounded-lg">
+<span class="material-symbols-outlined text-gray-400 text-xl">group</span>
+<span class="text-xs font-bold text-wood-brown dark:text-gray-300">Guests</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">search</span>
+                        Search Stays
+                    </button>
+</div>
+</div>
+</section>
+<!-- Why Book With Us Section -->
+<section class="px-6 py-8">
+<div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+<div class="flex-shrink-0 flex items-center gap-3 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 min-w-[240px]">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Verified Hosts</h4>
+<p class="text-xs text-gray-500">Every stay is vetted</p>
+</div>
+</div>
+<div class="flex-shrink-0 flex items-center gap-3 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 min-w-[240px]">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">24/7 Support</h4>
+<p class="text-xs text-gray-500">Always here for you</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editor's Picks -->
+<section class="px-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-2xl font-extrabold text-wood-brown dark:text-white">Editor's Picks</h3>
+<button class="text-primary font-bold text-sm">See all</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Listing 1 -->
+<div class="group flex flex-col gap-3">
+<div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern geometric stone house in the English countryside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC50Rz8qSbe_R5yx63LrOROE-RREmpl6nZ5QeQEXq_sI3SVoyD2DcAlrXIypOleAH_3phXQfInQgQheGq21Z_qZagTjMOcytKwK7xKAYkV5I1T3DDBd9Q3nfZrY_yaMgK9yqQl34a--BVDkmOZuC2MgeuZtdyDubcku6jts-eISl256zNz6yHsrpisI3sxcdDMVOnJf9OOaunNG_YZ43EFjpTgKYGehRzbtjKNO25K8OgmSH2xDNMwcs6Y7YQkGMsi_tRdGcBLSJ1IU"/>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-wood-brown text-xl">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 px-2 py-1 bg-white/90 backdrop-blur-sm rounded text-[10px] font-black uppercase tracking-wider text-wood-brown">
+                            Rare Find
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-lg leading-tight">The Oak Cottage</h4>
+<p class="text-sm text-gray-500">Cotswolds, UK</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-soft-gold text-sm active-tab">star</span>
+<span class="text-sm font-bold">4.98</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-lg font-extrabold text-primary">$180</span>
+<span class="text-sm text-gray-500">/ night</span>
+</div>
+</div>
+<!-- Listing 2 -->
+<div class="group flex flex-col gap-3">
+<div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rustic beach house with a large deck overlooking the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEg1B-oNTifjE7CNgZ_u0Wbr6OKFAahxVZkPmb8-qE_VnfnHRDBQ-9uOvW-63_a8T9LXWGCjW-AyDKn5XLUUpNUURDLGMjBtoEKkJfzsK0LNFYPZLR4L4xxfzgbtxrrfFCS9Xsc_x11ftMRHu-Pw-gwZw9m0ywQP6BrnDkQvo_ST2tgYzXmr2VKVF-Ol5efMWFiufthBXD205frrufMqEMZ9_Wr-dDInlJXUvOAFovnwsQD3WTom_7qCAAR8DCyU2_RYeWRdbEDpfz"/>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-wood-brown text-xl">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-lg leading-tight">Seaside Retreat</h4>
+<p class="text-sm text-gray-500">Cornwall, UK</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-soft-gold text-sm active-tab">star</span>
+<span class="text-sm font-bold">4.95</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-lg font-extrabold text-primary">$210</span>
+<span class="text-sm text-gray-500">/ night</span>
+</div>
+</div>
+<!-- Listing 3 -->
+<div class="group flex flex-col gap-3">
+<div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A-frame wooden cabin in the snowy mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gRCPUzy5idSm4vFkNYZRv1PQMb1v1ynOuYhC_snl7MsH7c9GMjF2poJKF00pwYRcrX3FHlR38eMvuoxM4350BZJgr9BCgdVewy02-Qu_tjWCt0Vzt5sIT4ufmxXzGQrmXFpvCNicVaP2EZwRfzULmS1fg934LKCi2CVBKgTM_T-xKYgMKy7c9ZYadO34efpoTRA_ZQ5oeKeKD7VkjKn1WJ9Z83TUvI6SIvFXYRmNkaZsQupjOwhHXxAWBBp2tS7l3dCdCYmpIWON"/>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-wood-brown text-xl">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-lg leading-tight">Golden Hill Cabin</h4>
+<p class="text-sm text-gray-500">Aspen, Colorado</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-soft-gold text-sm active-tab">star</span>
+<span class="text-sm font-bold">4.90</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-lg font-extrabold text-primary">$320</span>
+<span class="text-sm text-gray-500">/ night</span>
+</div>
+</div>
+<!-- Listing 4 -->
+<div class="group flex flex-col gap-3">
+<div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Historic stone mill house next to a small waterfall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVoDWSe9EGm5NkLnKO84WDkgNQy7dBIYO6d97qkCopybGdQ1VYvFNm8unJFIlBlwcOnWWlJnR6zBkQDbRXN_IHD0uQw-IKoWx3ktK0-RAz0lU0nRZuwq3VRrmuGf1B_WlOKkmIs9fBaA4cLMyLgTxTVKB3tAAi4ZyryZllWKfoH6akJKF4CJscYXPhDsTEPr2Uk0YswJwtahf2Dne2-PC3_K-kkqnhtWXPSFhwyp9u4nVGs1QCZ5fmb6R4SOcRqAdtw132uwlb-mTR"/>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-wood-brown text-xl">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-lg leading-tight">Stone Mill House</h4>
+<p class="text-sm text-gray-500">Tuscany, Italy</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-soft-gold text-sm active-tab">star</span>
+<span class="text-sm font-bold">4.85</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-lg font-extrabold text-primary">$150</span>
+<span class="text-sm text-gray-500">/ night</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800 px-6 py-3 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary active-tab">explore</span>
+<span class="text-[10px] font-bold text-primary">Explore</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">favorite</span>
+<span class="text-[10px] font-bold text-gray-400">Saved</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">luggage</span>
+<span class="text-[10px] font-bold text-gray-400">Trips</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">chat_bubble</span>
+<span class="text-[10px] font-bold text-gray-400">Inbox</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">account_circle</span>
+<span class="text-[10px] font-bold text-gray-400">Profile</span>
+</div>
+</nav>
+<!-- Custom No Scrollbar Style -->
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

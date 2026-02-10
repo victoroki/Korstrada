@@ -1,0 +1,22 @@
+# Helper files
+.vercel
+node_modules
+.env
+.idea
+.vscode
+.DS_Store
+
+# Frontend
+client/node_modules
+client/dist
+client/build
+client/.env
+
+# Netlify
+.netlify
+netlify-plugins
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
