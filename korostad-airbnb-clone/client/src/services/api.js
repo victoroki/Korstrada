@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const isProduction = import.meta.env.PROD;
-const PRODUCTION_URL = 'https://kor-pxf3okmnf-victors-projects-110783d5.vercel.app/api';
+const PRODUCTION_URL = 'https://kor-victors-projects-110783d5.vercel.app/api';
 let API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || (isProduction ? PRODUCTION_URL : 'http://localhost:5000/api');
 
 // If we are in production and the URL still points to localhost, 
