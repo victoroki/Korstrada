@@ -1,6 +1,13 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:5000/api';
+const isProduction = import.meta.env.PROD;
+let API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || (isProduction ? '/api' : 'http://localhost:5000/api');
+
+// If we are in production and the URL still points to localhost, 
+// it's likely a misconfiguration in the .env file.
+if (isProduction && API_BASE_URL.includes('localhost')) {
+  API_BASE_URL = '/api';
+}
 
 const api = axios.create({
   baseURL: API_BASE_URL,
