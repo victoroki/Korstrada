@@ -5,10 +5,10 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "build": "echo 'No backend build step' && cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build",
+    "vercel-build": "cd client && npm install && npm run build",
     "frontend": "cd client && npm run dev",
-    "both": "concurrently \"npm run dev\" \"npm run frontend\"",
-    "vercel-build": "npm run build"
+    "both": "concurrently \"npm run dev\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
