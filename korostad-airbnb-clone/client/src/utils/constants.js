@@ -1,4 +1,4 @@
-// API endpoints
+// API endpoints redeployed
 export const API_ENDPOINTS = {
   AUTH: {
     REGISTER: '/auth/register',
