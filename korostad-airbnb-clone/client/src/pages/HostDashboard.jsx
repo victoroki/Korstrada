@@ -32,7 +32,7 @@ const HostDashboard = () => {
           <div>
             <h4 className="text-[#ec6d13] font-black uppercase tracking-[0.3em] text-[10px] mb-2">Curator Portal</h4>
             <h1 className="text-5xl font-black text-gray-900 tracking-tighter">
-              Welcome, {user?.firstName || 'Julien'}
+              Welcome back, {user?.firstName || 'Curator'}
             </h1>
             <p className="text-gray-500 font-bold mt-2">Manage your boutique collection and stay experiences.</p>
           </div>
@@ -102,7 +102,7 @@ const HostDashboard = () => {
               <div className="bg-white p-16 rounded-[3rem] border-2 border-dashed border-gray-100 text-center">
                 <span className="material-symbols-outlined text-gray-200 text-7xl mb-4">add_home</span>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Your collection is empty</h3>
-                <p className="text-gray-500 mb-8 font-medium">Start your journey as a Korstrada curator by adding your first masterpiece.</p>
+                <p className="text-gray-500 mb-8 font-medium">Start your journey as a Kornialle curator by adding your first masterpiece.</p>
                 <Link to="/dashboard/admin/properties/new" className="bg-[#ec6d13] text-white font-black px-10 py-4 rounded-2xl shadow-xl shadow-orange-100 hover:bg-orange-600 transition-all hover:-translate-y-1 inline-block">Create Listing</Link>
               </div>
             )}

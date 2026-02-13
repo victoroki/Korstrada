@@ -49,7 +49,7 @@ const AdminProperties = () => {
                     <div className="mb-10 flex items-end justify-between">
                         <div>
                             <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Properties</h1>
-                            <p className="text-gray-500 font-medium mt-1">Monitor and moderate all listings on Korstrada.</p>
+                            <p className="text-gray-500 font-medium mt-1">Monitor and moderate all listings on Kornialle.</p>
                         </div>
                         <Link
                             to="/dashboard/admin/properties/new"

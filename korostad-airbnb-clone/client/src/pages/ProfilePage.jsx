@@ -46,7 +46,7 @@ const ProfilePage = () => {
                                 <img src={user?.profileImage || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`} className="w-full h-full object-cover" alt="Profile" />
                             </div>
                             <div className="flex-1 pb-2">
-                                <h1 className="text-3xl font-black text-gray-900 tracking-tight">{user?.firstName || 'Julien'} {user?.lastName || 'Korst'}</h1>
+                                <h1 className="text-3xl font-black text-gray-900 tracking-tight">{user?.firstName} {user?.lastName}</h1>
                                 <p className="text-gray-500 font-bold uppercase tracking-widest text-xs mt-1">{user?.role || 'Boutique Traveler'} Member</p>
                             </div>
                             <button
@@ -148,7 +148,7 @@ const ProfilePage = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <p className="text-gray-400 font-bold text-xs uppercase tracking-[0.3em]">Member since 2026 · Korstrada Exclusive</p>
+                    <p className="text-gray-400 font-bold text-xs uppercase tracking-[0.3em]">Member since 2026 · Kornialle Exclusive</p>
                 </div>
             </div>
         </div>

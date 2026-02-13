@@ -20,8 +20,8 @@ const AdminSidebar = ({ open, setOpen }) => {
             <div className="p-6 border-b border-gray-100 flex items-center justify-between">
                 {open && (
                     <Link to="/" className="flex items-center gap-2 group">
-                        <img src="/assets/logo.png" alt="Korstrada" className="h-8 w-auto object-contain" />
-                        <span className="font-black text-gray-900 tracking-tighter">Korstrada Admin</span>
+                        <img src="/assets/logo.png" alt="Kornialle" className="h-8 w-auto object-contain" />
+                        <span className="font-black text-gray-900 tracking-tighter">Kornialle Admin</span>
                     </Link>
                 )}
                 <button

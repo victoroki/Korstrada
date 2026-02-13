@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-8 max-w-sm">
             <Link to="/" className="flex items-center gap-4 group">
-              <img src="/assets/logo.png" alt="Korstrada" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
-              <h1 className="text-2xl font-black tracking-tighter text-gray-900">Korstrada</h1>
+              <img src="/assets/logo.png" alt="Kornialle" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+              <h1 className="text-2xl font-black tracking-tighter text-gray-900">Kornialle</h1>
             </Link>
             <p className="text-gray-500 font-medium text-base leading-relaxed">
               Elevating the art of travel. Discover hand-picked boutique stays and unique experiences curated for the discerning traveler.
@@ -46,7 +46,7 @@ const Footer = () => {
                 <li><Link to="/dashboard/host" className="text-gray-600 font-bold text-sm hover:text-[#ec6d13] transition-colors tracking-wide">Become a Curator</Link></li>
                 <li><Link to="/register" className="text-gray-600 font-bold text-sm hover:text-[#ec6d13] transition-colors tracking-wide">Join the Club</Link></li>
                 <li><Link to="/login" className="text-gray-600 font-bold text-sm hover:text-[#ec6d13] transition-colors tracking-wide">Member Access</Link></li>
-                <li><Link to="/" className="text-gray-600 font-bold text-sm hover:text-[#ec6d13] transition-colors tracking-wide"> Korstrada Events</Link></li>
+                <li><Link to="/" className="text-gray-600 font-bold text-sm hover:text-[#ec6d13] transition-colors tracking-wide"> Kornialle Events</Link></li>
               </ul>
             </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 pt-10 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] font-black uppercase tracking-[0.15em] text-gray-400">
           <div className="flex items-center gap-2">
-            <span>&copy; 2026 Korstrada Premium Stays.</span>
+            <span>&copy; 2026 Kornialle Premium Stays.</span>
             <span className="hidden md:inline text-gray-200">|</span>
             <span className="text-gray-300">Handcrafted in London</span>
           </div>

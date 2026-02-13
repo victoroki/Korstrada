@@ -32,7 +32,7 @@ const GuestDashboard = () => {
           <div>
             <h4 className="text-[#ec6d13] font-black uppercase tracking-[0.3em] text-[10px] mb-2">Member Portal</h4>
             <h1 className="text-5xl font-black text-gray-900 tracking-tighter">
-              Welcome, {user?.firstName || 'Julien'}
+              Welcome back, {user?.firstName || 'Traveler'}
             </h1>
             <p className="text-gray-500 font-bold mt-2">Explore your curated journeys and account insights.</p>
           </div>
@@ -112,7 +112,7 @@ const GuestDashboard = () => {
             <div className="bg-black p-10 rounded-[2.5rem] text-white shadow-2xl shadow-gray-900/20 overflow-hidden relative group">
               <div className="relative z-10">
                 <h3 className="text-2xl font-black mb-2 tracking-tight">Become a Curator</h3>
-                <p className="text-gray-400 font-bold text-sm mb-6 leading-relaxed">Share your extraordinary space with the Korstrada community and earn elite status.</p>
+                <p className="text-gray-400 font-bold text-sm mb-6 leading-relaxed">Share your extraordinary space with the Kornialle community and earn elite status.</p>
                 <button className="w-full bg-[#ec6d13] py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-orange-600 transition-all">List Your Property</button>
               </div>
               <div className="absolute -right-4 -bottom-4 size-32 bg-orange-600/20 blur-3xl group-hover:bg-orange-600/40 transition-all"></div>

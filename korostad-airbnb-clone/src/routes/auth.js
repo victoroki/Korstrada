@@ -31,4 +31,9 @@ router.put('/profile', authenticate, [
   body('profileImage').optional().isURL()
 ], updateProfile);
 
+// Logout route
+router.post('/logout', (req, res) => {
+  res.status(200).json({ success: true, message: 'Logged out successfully' });
+});
+
 module.exports = router;

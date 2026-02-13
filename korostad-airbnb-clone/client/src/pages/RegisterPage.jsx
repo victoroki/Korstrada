@@ -48,11 +48,11 @@ const RegisterPage = () => {
     <div className="min-h-screen flex flex-col justify-center bg-[#fcfaf8] py-20 px-6 lg:px-8 font-jakarta">
       <div className="sm:mx-auto sm:w-full sm:max-w-xl text-center">
         <Link to="/" className="inline-flex flex-col items-center gap-2 group mb-8">
-          <img src="/assets/logo.png" alt="Korstrada" className="h-16 w-auto object-contain transition-transform group-hover:scale-110" />
-          <h1 className="text-3xl font-black tracking-tighter text-gray-900">Korstrada</h1>
+          <img src="/assets/logo.png" alt="Kornialle" className="h-16 w-auto object-contain transition-transform group-hover:scale-110" />
+          <h1 className="text-3xl font-black tracking-tighter text-gray-900">Kornialle</h1>
         </Link>
-        <h2 className="text-4xl font-black text-gray-900 tracking-tight">Request Access</h2>
-        <p className="mt-2 text-gray-500 font-bold">Join the most exclusive community of boutique travelers and curators.</p>
+        <h2 className="text-4xl font-black text-gray-900 tracking-tight">Join Kornialle</h2>
+        <p className="mt-2 text-gray-500 font-bold">Create your account to discover and book extraordinary stays.</p>
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-xl">
@@ -82,7 +82,7 @@ const RegisterPage = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 className="block w-full px-5 py-4 border-2 border-gray-100 rounded-2xl text-gray-900 font-bold focus:outline-none focus:border-[#ec6d13] transition-all sm:text-sm"
-                placeholder="Korst"
+                placeholder="Kornialle"
               />
             </div>
 
@@ -96,7 +96,7 @@ const RegisterPage = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="block w-full px-5 py-4 border-2 border-gray-100 rounded-2xl text-gray-900 font-bold focus:outline-none focus:border-[#ec6d13] transition-all sm:text-sm"
-                placeholder="julian@korstrada.org"
+                placeholder="julian@kornialle.org"
               />
             </div>
 
@@ -149,7 +149,7 @@ const RegisterPage = () => {
                 disabled={loading}
                 className="w-full flex justify-center py-5 px-4 border border-transparent rounded-2xl shadow-xl shadow-orange-100 text-lg font-black text-white bg-[#ec6d13] hover:bg-orange-600 transition-all hover:-translate-y-1 active:scale-95 disabled:opacity-50"
               >
-                {loading ? 'Processing...' : 'Request Access'}
+                {loading ? 'Creating Account...' : 'Join Kornialle'}
               </button>
             </div>
           </form>

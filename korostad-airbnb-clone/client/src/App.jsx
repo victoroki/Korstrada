@@ -5,7 +5,6 @@ import { store } from './store/store'; // We'll create this
 import { AuthProvider } from './context/AuthContext';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import MobileNav from './components/common/MobileNav';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -36,7 +35,14 @@ function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/property/:id" element={<PropertyDetailsPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
+                <Route
+                  path="/profile"
+                  element={
+                    <ProtectedRoute>
+                      <ProfilePage />
+                    </ProtectedRoute>
+                  }
+                />
 
                 {/* Protected routes */}
                 <Route
@@ -122,7 +128,6 @@ function App() {
               </Routes>
             </main>
             <Footer />
-            <MobileNav />
           </div>
         </Router>
       </AuthProvider>

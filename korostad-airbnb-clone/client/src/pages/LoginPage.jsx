@@ -45,8 +45,8 @@ const LoginPage = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center mb-8">
           <Link to="/" className="flex flex-col items-center gap-2 group">
-            <img src="/assets/logo.png" alt="Korstrada" className="h-16 w-auto object-contain transition-transform group-hover:scale-110" />
-            <h1 className="text-3xl font-black tracking-tighter text-gray-900">Korstrada</h1>
+            <img src="/assets/logo.png" alt="Kornialle" className="h-16 w-auto object-contain transition-transform group-hover:scale-110" />
+            <h1 className="text-3xl font-black tracking-tighter text-gray-900">Kornialle</h1>
           </Link>
         </div>
         <h2 className="text-center text-4xl font-black text-gray-900 tracking-tight">
@@ -70,7 +70,7 @@ const LoginPage = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="block w-full px-5 py-4 border-2 border-gray-100 rounded-2xl text-gray-900 font-bold placeholder-gray-300 focus:outline-none focus:border-[#ec6d13] focus:ring-0 transition-all sm:text-sm"
-                placeholder="curator@korstrada.com"
+                placeholder="curator@kornialle.com"
               />
             </div>
 

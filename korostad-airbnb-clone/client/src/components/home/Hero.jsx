@@ -110,7 +110,7 @@ const Hero = ({ onSearch }) => {
                 >
                     <div className="relative z-10 w-full max-w-4xl animate-in fade-in slide-in-from-bottom-6 duration-700">
                         <h2 className="text-white text-4xl md:text-7xl font-black leading-tight mb-6 drop-shadow-2xl tracking-tighter">
-                            Experience <span className="text-orange-400">Korstrada</span> Luxury
+                            Experience <span className="text-orange-400">Kornialle</span> Luxury
                         </h2>
                         <p className="text-white/95 text-lg md:text-2xl mb-12 font-bold drop-shadow-lg max-w-2xl mx-auto opacity-90">
                             Curated stays for the modern traveler. Discover hidden gems and unforgettable experiences.

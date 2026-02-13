@@ -79,13 +79,13 @@ const PropertyDetailsPage = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
         </div>
 
-        <div className="absolute bottom-8 left-8 right-8 flex items-end justify-between">
+        <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
           <div className="text-white space-y-2">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2 md:mb-4">
               <span className="bg-orange-600 text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full shadow-lg">Featured Stay</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-black tracking-tighter drop-shadow-2xl">{property.title}</h1>
-            <p className="text-white/90 font-bold flex items-center gap-2 drop-shadow-lg">
+            <h1 className="text-3xl md:text-5xl font-black tracking-tighter drop-shadow-2xl">{property.title}</h1>
+            <p className="text-white/90 text-sm md:text-base font-bold flex items-center gap-2 drop-shadow-lg">
               <span className="material-symbols-outlined text-sm">location_on</span>
               {property.address}, {property.city}
             </p>
@@ -136,7 +136,7 @@ const PropertyDetailsPage = () => {
           <div className="prose prose-lg max-w-none">
             <h3 className="text-2xl font-black text-gray-900 tracking-tight mb-4">About this experience</h3>
             <p className="text-gray-600 font-medium leading-relaxed">
-              {property.description || "Indulge in a world where luxury meets local charm. This hand-picked Korstrada selection offers more than just a place to sleep—it's a curated experience designed to inspire your journey."}
+              {property.description || "Indulge in a world where luxury meets local charm. This hand-picked Kornialle selection offers more than just a place to sleep—it's a curated experience designed to inspire your journey."}
             </p>
           </div>
 
@@ -159,7 +159,7 @@ const PropertyDetailsPage = () => {
               <img src={property.hostProfileImage || `https://api.dicebear.com/7.x/avataaars/svg?seed=${property.hostFirstName || 'host'}`} className="w-full h-full object-cover" />
             </div>
             <div className="text-center md:text-left">
-              <h4 className="text-xl font-black text-gray-900 mb-1">Hosted by {property.hostFirstName || property.hostfirstname || 'Korstrada Curator'}</h4>
+              <h4 className="text-xl font-black text-gray-900 mb-1">Hosted by {property.hostFirstName || property.hostfirstname || 'Kornialle Curator'}</h4>
               <p className="text-gray-500 font-bold text-sm uppercase tracking-widest mb-4">Verified Professional Host</p>
               <p className="text-gray-600 font-medium leading-relaxed mb-6 italic max-w-md">"My goal is to provide a seamless, beautiful environment where you can truly unplug and enjoy the local essence. Welcome to my home."</p>
               <button className="px-6 py-2.5 rounded-xl border-2 border-gray-200 font-bold text-sm text-gray-700 hover:bg-white hover:border-gray-900 transition-all">Contact Host</button>
@@ -213,7 +213,7 @@ const PropertyDetailsPage = () => {
                 <span className="text-gray-900 font-extrabold">${(property.basePrice || property.baseprice || 150) * 5}</span>
               </div>
               <div className="flex justify-between text-sm font-bold text-gray-500">
-                <span>Korstrada Service Fee</span>
+                <span>Kornialle Service Fee</span>
                 <span className="text-gray-900 font-extrabold">$25</span>
               </div>
               <div className="flex justify-between text-lg font-black text-gray-900 pt-4">
@@ -223,7 +223,7 @@ const PropertyDetailsPage = () => {
             </div>
 
             <p className="text-center text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mt-8">
-              Secure Payment via Korstrada
+              Secure Payment via Kornialle
             </p>
           </div>
         </div>
